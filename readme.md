@@ -1,4 +1,4 @@
-# Batch file operations
+# Batch image operations
 
 ## resize.py: dynamic resizing
 
