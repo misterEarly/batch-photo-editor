@@ -5,13 +5,14 @@ import os
 from PIL import Image
 
 
-path = r"C:\Users\Lovis\OneDrive - ZHAW\Pfadi\PfadiAfi\AL\Website\Fotos\01_Uploaded\21 Sambucus Aktivitaeten"
+path = r"C:\Users\lofru\Private Cloud\Pfadi\PfadiAfi\AL\Website\Fotos\01_Uploaded\22\goldi pfila"
 
-name = "Sambucus_Herbst_Aktivitaeten"
+name = "Goldenberg_PfiLa"
 
 os.listdir(path)
 
 for file in os.listdir(path):
+    # TODO add iteration variable
 
     path_img = os.path.join(path, file)
 
@@ -21,9 +22,9 @@ for file in os.listdir(path):
     except:
         print("couldnt open file %s" % path_img)
         continue
-        # todo raise exception
+        # TODO raise exception
 
-    new_name = os.path.join(path, name + file[3:])
+    new_name = os.path.join(path, name + file[3:])  # cut off the first three characters
 
     img.save(new_name)
     img.close()

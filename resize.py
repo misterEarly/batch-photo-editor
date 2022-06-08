@@ -5,7 +5,7 @@ import os
 from PIL import Image
 
 
-path = r"C:\Users\Lovis\OneDrive - ZHAW\Pfadi\PfadiAfi\AL\Website\Fotos\01_Uploaded\21 Sambucus Aktivitaeten"
+path = r"C:\Users\lofru\Private Cloud\Pfadi\PfadiAfi\AL\Website\Fotos\01_Uploaded\22\goldi pfila"
 max_edge_length = 1000  # define length of longer side in resized image
 
 os.listdir(path)
