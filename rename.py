@@ -11,6 +11,8 @@ name = "Goldenberg_PfiLa"
 
 os.listdir(path)
 
+i = 10000
+
 for file in os.listdir(path):
     # TODO add iteration variable
 
@@ -24,7 +26,11 @@ for file in os.listdir(path):
         continue
         # TODO raise exception
 
-    new_name = os.path.join(path, name + file[3:])  # cut off the first three characters
+    new_name = os.path.join(
+        targetpath, name + str(i)[1:] + file[-4:]
+    )  # cut off the first three characters
 
     img.save(new_name)
     img.close()
+
+    i += 1
